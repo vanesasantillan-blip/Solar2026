@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f8e9;
+  color: #30452e;
+  text-align: center;
+}
+header {
+  background-color: #4b8b52;
+  color: white;
+  padding: 30px 15px;
+}
+h1 { font-size: 32px; }
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+.portada, article, .resultado {
+  background-color: white;
+  padding: 25px;
+  margin: 18px 0;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px #00000015;
+}
+.tarjetas {
+  display: flex;
+  gap: 18px;
+}
+.tarjetas article { flex: 1; }
+button {
+  background-color: #f0bd4c;
+  color: #30452e;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover { background-color: #e6a92d; }
+button:focus-visible {
+  outline: 3px solid #30452e;
+  outline-offset: 3px;
+}
+footer {
+  background-color: #4b8b52;
+  color: white;
+  padding: 15px;
+}
+@media (max-width: 600px) {
+  .tarjetas { flex-direction: column; }
+  h1 { font-size: 26px; }
+}

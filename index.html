@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Juegos Reciclados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>♻️ ¡Creamos y jugamos!</h1>
+    <p>Taller de juegos y objetos reciclados</p>
+  </header>
+
+  <main>
+    <section class="portada">
+      <h2>🌱 ¿De qué se trata?</h2>
+      <p>Durante tres meses, vamos a crear juegos y objetos divertidos usando materiales reciclados. Cada grupo preparará una manualidad y enseñará a las demás cómo hacerla.</p>
+      <button onclick="mostrar('proyecto')">Conocer el proyecto</button>
+    </section>
+
+    <section class="tarjetas">
+      <article>
+        <h2>🎨 Actividades</h2>
+        <p>¡Descubrí todo lo que podemos crear!</p>
+        <button onclick="mostrar('actividades')">Ver actividades</button>
+      </article>
+      <article>
+        <h2>📅 Tres meses</h2>
+        <p>Aprendemos, creamos y compartimos.</p>
+        <button onclick="mostrar('meses')">Ver etapas</button>
+      </article>
+    </section>
+
+    <section id="resultado" class="resultado" aria-live="polite">
+      <h2>🤝 ¡Creamos entre todas!</h2>
+      <p>Aprendemos a cuidar el ambiente, reutilizar materiales y trabajar en equipo.</p>
+    </section>
+  </main>
+
+  <footer><p>♻️ Reciclar, crear y jugar</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
